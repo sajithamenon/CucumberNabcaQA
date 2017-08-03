@@ -1,5 +1,7 @@
 Steps\LoginTest.class
 Base\BaseUtil.class
-runner\TestRunner.class
+Pages\DashboardPage.class
 Pages\loginPage.class
+runner\TestRunner.class
+Pages\RequestAccessPage.class
 Steps\Hook.class

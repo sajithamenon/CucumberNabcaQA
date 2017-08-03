@@ -13,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class loginPage {
     public loginPage(WebDriver driver) {
+
         PageFactory.initElements(driver, this);
     }
 

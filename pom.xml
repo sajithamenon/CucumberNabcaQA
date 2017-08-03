@@ -38,9 +38,10 @@
                         <configuration>
                             <projectName>Nabca</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-                            <CucumberOutput>${project.build.directory}/cucumber.json</CucumberOutput>
+                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
 
                         </configuration>
+
                     </execution>
                 </executions>
             </plugin>

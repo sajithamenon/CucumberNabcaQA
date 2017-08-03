@@ -5,8 +5,20 @@ Feature: Login Feature
     Given When I am on login page
     And I enter the following details
       | userName                            | pasword  |
-      | sajitha.r+nabcadmin@303software.com | 12121212 |
-      | sajitha.r+nabcadmin@303software.com | 12121212 |
+     | 303admin | 12345678 |
+
     And I click on login button
-    Then i should see the  page title as "Users Login"
-    And the tab users on the page
+    Then i should see the  page title as "Dashboard"
+
+
+    Scenario: Login with incorrect username and password for the admin
+      Given When I am on login page
+      And I enter the following details
+        | userName                            | pasword  |
+        | 303admi | 1234678 |
+
+      And I click on login button
+      Then i should not see the  page title as "Users Login"
+
+
+
